@@ -1,6 +1,6 @@
+from operator import itemgetter
 from random import randint
 from time import sleep
-from operator import itemgetter
 
 print(f'{" DESAFIO 091 ":=^29}')
 
@@ -19,7 +19,7 @@ for player, dice in dice_players.items():
     print(f"{player}: {dice}")
     sleep(1)
 
-### SORTED() METHOD WITH ITEMGETTER ###
+# SORTED() METHOD WITH ITEMGETTER
 ranking: list[tuple[str, int]] = sorted(
     dice_players.items(), key=itemgetter(1), reverse=True
 )
@@ -30,12 +30,12 @@ for i, player in enumerate(ranking):
     sleep(1)
 
 
-### USING THE SORTED() METHOD ###
+# USING THE SORTED() METHOD
 # for player in sorted(dice_players, key=dice_players.get, reverse=True):
 #     print(player, dice_players[player])
 
 
-### MANUAL SORTING ###
+# MANUAL SORTING
 # dice_items: list[tuple[str, int]] = list(dice_players.items())
 
 # for i in range(len(dice_items)):
@@ -53,3 +53,4 @@ for i, player in enumerate(ranking):
 # for player, dice in dice_game_sorted.items():
 #     print(f"{ranking}ª {player}: {dice}")
 #     ranking += 1
+
