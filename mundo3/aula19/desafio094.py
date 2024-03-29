@@ -17,7 +17,7 @@ while True:
 
     break_point = input("Quer continuar? [S/N] ").upper()
 
-    while break_point not in ('S', 'N'):
+    while break_point not in ("S", "N"):
         print('Por favor, responda apenas com "S" ou "N"')
         break_point = input("Quer continuar? [S/N] ").upper()
 
