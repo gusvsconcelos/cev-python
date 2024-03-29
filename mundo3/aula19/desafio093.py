@@ -1,8 +1,6 @@
-from typing import Any
-
 print(f'{" DESAFIO 093 ":=^29}')
 
-player_data: dict[str, Any] = {}
+player_data = {}
 scores = []
 player_data["Nome"] = input("Nome do jogador: ")
 

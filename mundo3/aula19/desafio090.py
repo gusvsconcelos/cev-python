@@ -1,6 +1,6 @@
 print(f'{" DESAFIO 090 ":=^29}')
 
-student_status: dict[str, str] = {}
+student_status = {}
 
 student_name = input("Nome do aluno: ")
 student_avarage_grade = float(input("Média do aluno: "))

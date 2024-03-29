@@ -1,9 +1,7 @@
-from typing import Any
-
 print(f'{" DESAFIO 094 ":=^29}')
 
-users: list[Any] = []
-person: dict[Any, Any] = {}
+users = []
+person = {}
 
 while True:
     person["Nome"] = input("Nome: ").capitalize()
@@ -19,7 +17,7 @@ while True:
 
     break_point = input("Quer continuar? [S/N] ").upper()
 
-    while break_point != "S" and break_point != "N":
+    while break_point not in ('S', 'N'):
         print('Por favor, responda apenas com "S" ou "N"')
         break_point = input("Quer continuar? [S/N] ").upper()
 
@@ -29,12 +27,11 @@ while True:
 print("-=" * 25)
 print(f"A) Ao todo temos {len(users)} pessoas cadastradas.")
 
-age_total = 0
-
+AGE_TOTAL = 0
 for u in users:
-    age_total += u["Idade"]
+    AGE_TOTAL += u["Idade"]
 
-age_avarage = age_total / len(users)
+age_avarage = AGE_TOTAL / len(users)
 
 print(f"B) A média de idade é de {age_avarage:.1f} anos.")
 

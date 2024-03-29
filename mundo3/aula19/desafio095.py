@@ -1,10 +1,8 @@
-from typing import Any
-
 print(f'{" DESAFIO 095 ":=^29}')
 
-soccer_team: list[Any] = []
-player_data: dict[str, Any] = {}
-scores: list[int] = []
+soccer_team = []
+player_data = {}
+scores = []
 
 while True:
     player_data["Nome"] = input("Nome do jogador: ").capitalize()
@@ -19,7 +17,7 @@ while True:
 
     soccer_team.append(player_data.copy())
 
-    break_loop: str = input('Quer continuar? [S/N] ').upper()
+    break_loop = input('Quer continuar? [S/N] ').upper()
 
     if break_loop == 'N':
         break
@@ -42,8 +40,9 @@ while True:
     if index == 999:
         print('-- VOLTE SEMPRE --')
         break
-    else:
-        print(
-            f'-- LEVANTAMENTO DO JOGADOR {soccer_team[index]['Nome'].upper()} --')
-        for i in range(len(soccer_team[index]['Gols'])):
-            print(f'   No jogo {i + 1} fez {soccer_team[index]['Gols'][i]}')
+
+    print(
+        f'-- LEVANTAMENTO DO JOGADOR {soccer_team[index]['Nome'].upper()} --')
+
+    for i in range(len(soccer_team[index]['Gols'])):
+        print(f'   No jogo {i + 1} fez {soccer_team[index]['Gols'][i]}')
