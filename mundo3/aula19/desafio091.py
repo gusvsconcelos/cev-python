@@ -53,4 +53,3 @@ for i, player in enumerate(ranking):
 # for player, dice in dice_game_sorted.items():
 #     print(f"{ranking}ª {player}: {dice}")
 #     ranking += 1
-
