@@ -4,8 +4,7 @@ worker = dict()
 
 worker["Nome"] = input("Nome: ")
 worker["Ano de nascimento"] = int(input("Ano de nascimento: "))
-worker["Carteira de Trabalho"] = int(
-    input("Carteira de Trabalho [0 não tem]: "))
+worker["Carteira de Trabalho"] = int(input("Carteira de Trabalho [0 não tem]: "))
 
 if worker["Carteira de Trabalho"] != 0:
     worker["Ano de contratação"] = int(input("Ano de contratação: "))
