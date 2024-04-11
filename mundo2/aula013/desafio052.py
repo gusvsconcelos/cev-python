@@ -1,4 +1,4 @@
-# print(f'{"=" * 8} DESAFIO 052 {"=" * 8}')
+print(f'{"=" * 8} DESAFIO 052 {"=" * 8}')
 
 # num = int(input('Digite um número: '))
 

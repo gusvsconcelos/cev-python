@@ -3,8 +3,16 @@
 from aula22_utils import moedas
 
 
+def header():
+    """ Display program header """
+
+    print(f'{" DESAFIO 107 ":=^29}')
+
+
 def main():
     """ Main program """
+
+    header()
     num = float(input('Digite o preço: R$'))
 
     print(f'A metade de {num} é {moedas.half(num)}')
