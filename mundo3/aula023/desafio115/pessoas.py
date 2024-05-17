@@ -1,11 +1,12 @@
 """ User Registration """
 
 from time import sleep
+
 from colors import color as c
 
 
 def read():
-    """ 
+    """
     Read the users data file and return its content as a parameter for the
     create_user() method.
 
